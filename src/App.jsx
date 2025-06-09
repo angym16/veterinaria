@@ -45,7 +45,7 @@ function App() {
         
         <div className="relative z-10">
           <img
-            src="img/1234.jpg" 
+            src="src/img/chef-man-cap-svgrepo-com.svg" 
             className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
           />
         </div>
