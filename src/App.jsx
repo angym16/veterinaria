@@ -45,8 +45,7 @@ function App() {
         
         <div className="relative z-10">
           <img
-            src="src/img/mascotilove.png" 
-            alt="Logo de la veterinaria"
+            src="src/img/1234.jpg" 
             className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
           />
         </div>
