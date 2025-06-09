@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Formulario from "./components/Formulario"
 import Header from "./components/Header"
 import ListadoPacientes from "./components/ListadoPacientes"
+import Img from "./img/1234.jpg"
 
 //Props ->Propiedades - para pasar variables o funciones de otros componentes
 //Ejemplo - <Header nombreProp= {datos o Funciones}/>
@@ -43,13 +44,13 @@ function App() {
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-teal-200 rounded-full opacity-10"></div>
         <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-300 rounded-full opacity-10"></div>
         
-        {/* <div className="relative z-10 w-40 h-40 mb-8  rounded-full border-4 border-white shadow-lg"> */}
+        <div className="relative z-10">
           <img
-            src="src/img/1234.jpg" 
+            src={Img} 
             alt="Imagen"
-            // className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
+            className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
           />
-        {/* </div> */}
+        </div>
 
         <button
           onClick={() => setIngresado(true)}
