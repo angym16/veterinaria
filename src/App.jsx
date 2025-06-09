@@ -43,10 +43,10 @@ function App() {
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-teal-200 rounded-full opacity-10"></div>
         <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-300 rounded-full opacity-10"></div>
         
-        <div className="relative z-10">
+        <div className="relative z-10 w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg">
           <img
             src="src/img/chef-man-cap-svgrepo-com.svg" 
-            className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
+            // className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
           />
         </div>
 
