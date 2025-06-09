@@ -6,7 +6,7 @@ const Header = () => {
         <Dog className="text-cyan-700 w-8 h-8" />
       </div>
       <div>
-        <h1 className="text-xl md:text-2xl font-bold text-gray-800">Bigotes</h1>
+        <h1 className="text-xl md:text-2xl font-bold text-gray-800">MascotiLove</h1>
         <p className="text-cyan-700 text-lg font-semibold">Veterinaria</p>
       </div>
     </header>
