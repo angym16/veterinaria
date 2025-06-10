@@ -139,7 +139,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          )}
 
           <div className="mt-5">
-            <label htmlFor="mascota" className="block font-bold uppercase text-sm text-gray-700 mb-1">Nombre Macota</label>
+            <label htmlFor="mascota" className="block font-bold uppercase text-sm text-gray-700 mb-1">Nombre Mascota</label>
 
             <input 
             id="mascota"
