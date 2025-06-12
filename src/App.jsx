@@ -41,20 +41,20 @@ function App() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-cyan-50 to-teal-100 flex flex-col items-center justify-center p-6 relative overflow-hidden">
         
-        <div className="absolute -top-20 -right-20 w-64 h-64 bg-teal-200 rounded-full opacity-10"></div>
-        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-300 rounded-full opacity-10"></div>
+        <div className="absolute -top-20 -right-20 w-80 h-80 bg-teal-200 rounded-full opacity-10"></div>
+        <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-cyan-300 rounded-full opacity-10"></div>
         
         <div className="relative z-10">
           <img
             src={Img} 
             alt="Imagen"
-            className="w-40 h-40 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
+            className="w-80 h-80 mb-8 object-cover rounded-full border-4 border-white shadow-lg" 
           />
         </div>
 
         <button
           onClick={() => setIngresado(true)}
-          className="relative z-10 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300"
+          className="relative z-10 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-4 px-7 rounded-lg shadow-md transition-all duration-300"
         >
           Ingresar
         </button>
