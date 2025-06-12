@@ -67,7 +67,7 @@ function App() {
     <div className="flex justify-end mb-4">
       <button
         onClick={() => setIngresado(false)}
-        className="bg-cyan-800 hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded"
+        className="relative z-10 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 text-white font-bold py-4 px-7 rounded-lg shadow-md transition-all duration-300"
       >
         Salir
       </button>
