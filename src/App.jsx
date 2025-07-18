@@ -11,9 +11,6 @@ function App() {
 
   const [ingresado, setIngresado] = useState(false);
 
-  // const[pacientes , setPacientes]= useState([]);
-  // const [paciente, setPaciente] = useState({});
-
   const [pacientes, setPacientes] = useState(() =>
     JSON.parse(localStorage.getItem('pacientes')) || []);
     const[paciente, setPaciente]= useState({});
