@@ -18,14 +18,7 @@ function App() {
     JSON.parse(localStorage.getItem('pacientes')) || []);
     const[paciente, setPaciente]= useState({});
 
- /*  useEffect(() => {
-    const obtenerLS=() => {
-      const pacientesLS =  JSON.parse(localStorage.getItem('Pacientes')) ?? [];
-      setPacientes(pacientesLS)
-    }
-    obtenerLS()
-  }, [])
- */
+
   useEffect(() => {
     localStorage.setItem('pacientes', JSON.stringify(pacientes));
   }, [pacientes])
