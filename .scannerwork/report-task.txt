@@ -2,5 +2,5 @@ projectKey=veterinaria-git
 serverUrl=http://localhost:9000
 serverVersion=25.7.0.110598
 dashboardUrl=http://localhost:9000/dashboard?id=veterinaria-git
-ceTaskId=d643b563-3b64-486c-9880-6ef45d961430
-ceTaskUrl=http://localhost:9000/api/ce/task?id=d643b563-3b64-486c-9880-6ef45d961430
+ceTaskId=a2cee461-7129-4802-a947-3150eb0bcb66
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a2cee461-7129-4802-a947-3150eb0bcb66

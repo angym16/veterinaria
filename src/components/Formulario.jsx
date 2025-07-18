@@ -3,6 +3,7 @@
 import { useState , useEffect} from 'react';
 import Error from './Error';
 import useSetFoto from "../hooks/useSetFoto";
+import PropTypes from 'prop-types';
 
 /*useEffect 
   import{useEffect} from 'react';
@@ -41,6 +42,13 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
     setFoto(paciente.foto || '');
   }
 }, [paciente]);
+
+  Formulario.propTypes = {
+    pacientes: PropTypes.array.isRequired,
+    setPacientes: PropTypes.func.isRequired,
+    paciente: PropTypes.object.isRequired,
+    setPaciente: PropTypes.func.isRequired,
+  };
 
 
   const generarId = () => {
@@ -198,7 +206,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
 
           {!paciente.id  && <div className="mt-5 h-[30%]">
             <label htmlFor="foto" className="block font-bold uppercase text-sm text-gray-700 mb-1">
-              Foto Mascota:
+              Foto Mascota:{" "}
               <span className="text-gray-500 text-xs bg-slate-200/20">{fotoNombre}</span>
             </label>
             <input

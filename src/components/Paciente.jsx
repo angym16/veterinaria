@@ -1,10 +1,10 @@
 import React from 'react'
-import useSetFoto from "../hooks/useSetFoto";
+import PropTypes from 'prop-types';
 
 const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
 
   //Se define el una variable un destructor
-  const{ nombre, propietario, email, fecha, sintomas, id, foto, fotoNombre } =paciente
+  const{ nombre, propietario, email, fecha, sintomas, id, foto} =paciente
   const handleEliminar = () =>{
     const respuesta = confirm('Deseas Eliminar este paciente')
 
@@ -12,6 +12,12 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
       eliminarPaciente(id)
     }
   }
+
+    Paciente.propTypes = {
+      paciente: PropTypes.object.isRequired,
+      setPaciente: PropTypes.func.isRequired,
+      eliminarPaciente: PropTypes.func.isRequired
+    };
 
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">

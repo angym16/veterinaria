@@ -1,12 +1,18 @@
 
 import Paciente from "./Paciente"
+import PropTypes from 'prop-types';
 
 const ListadoPacientes = ({pacientes , setPaciente, eliminarPaciente}) => {
 
+  ListadoPacientes.propTypes = {
+  pacientes: PropTypes.array.isRequired,
+  setPaciente: PropTypes.func.isRequired,
+  eliminarPaciente: PropTypes.func.isRequired
+  };
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
      
-     {pacientes && pacientes.length ? 
+     {Array.isArray(pacientes) && pacientes.length ? 
       (
         <>
           <h2 className="font-black text-3xl text-center">Listados Pacientes</h2>
@@ -40,5 +46,4 @@ const ListadoPacientes = ({pacientes , setPaciente, eliminarPaciente}) => {
     </div>
   )
 }
-
 export default ListadoPacientes
